@@ -152,6 +152,7 @@
                 const iconId = dayData.ForecastIcon;
                 const iconUrl = `https://www.hko.gov.hk/images/HKOWxIconOutline/pic${iconId}.png`;
                 const imgTag = document.getElementById(`f-icon-${i}`);
+                imgTag.referrerPolicy = "no-referrer";
                 imgTag.src = iconUrl;
                 imgTag.style.display = 'block';
                 
