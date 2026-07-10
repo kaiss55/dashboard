@@ -168,7 +168,7 @@
             const res = await fetch('https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/CTB/001436/E21B');
             const data = await res.json();
             
-            const validBuses = data.data.filter(item => item.dir === "O" && item.eta);
+            const validBuses = data.data.filter(item => item.dir === "I" && item.eta);
             const listContainer = document.getElementById('bus-eta-list');
             listContainer.innerHTML = ""; 
 
