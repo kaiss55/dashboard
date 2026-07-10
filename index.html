@@ -165,7 +165,7 @@
     // 攞城巴 E21B 未來 3 班車時間 (加埋到站時刻)
     async function fetchCitybusETA() {
         try {
-            const res = await fetch('https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/CTB/002621/E21B');
+            const res = await fetch('https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/CTB/001436/E21B');
             const data = await res.json();
             
             const validBuses = data.data.filter(item => item.dir === "O" && item.eta);
